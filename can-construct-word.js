@@ -21,6 +21,8 @@ canConstructWord('aabb', 'bcabad');
 
 
 
+
+
 /** Accepts a word and a string of letters, determines if the word can be constructed with the letters present */
 function canConstructWord(word, letters) {
   // if word > letters return false
@@ -42,7 +44,7 @@ function canConstructWord(word, letters) {
   }
 
   // return true or false
-  return true
+  return true;
 }
 
 /** creates object with the frequency of each letter  */
