@@ -21,7 +21,7 @@ canConstructWord('aabb', 'bcabad');
 
 
 
-// add whatever parameters you deem necessary & write doc comment
+/** Accepts a word and a string of letters, determines if the word can be constructed with the letters present */
 function canConstructWord(word, letters) {
   // if word > letters return false
   if (word.length > letters.length) {
@@ -45,6 +45,7 @@ function canConstructWord(word, letters) {
   return true
 }
 
+/** creates object with the frequency of each letter  */
 function getFrequency(word) {
   const freq = {};
   for (let char of word) {
