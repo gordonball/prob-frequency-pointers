@@ -31,6 +31,7 @@ function canConstructWord(word, letters) {
   }
 
   // get frequency word
+  //TODO: update let keyword to const for freq counter variables
   let wordFreq = getFrequency(word);
   // get frequency letters
   let lettersFreq = getFrequency(letters);
@@ -47,7 +48,9 @@ function canConstructWord(word, letters) {
   return true;
 }
 
-/** creates object with the frequency of each letter  */
+/** accepts a string and creates an object with the frequency of each letter  */
+
+//TODO: update function name to create
 function getFrequency(word) {
   const freq = {};
   for (let char of word) {
